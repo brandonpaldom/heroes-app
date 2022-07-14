@@ -1,7 +1,13 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export function Navbar() {
+  const navigate = useNavigate();
+
+  const onLogout = () => {
+    navigate('/login', { replace: true });
+  };
+
   return (
     <header className={styles.background}>
       <nav className={styles.container}>
@@ -39,9 +45,9 @@ export function Navbar() {
             <div className={styles.avatar}></div>
             <span className={styles.name}>Brandon</span>
           </div>
-          <Link to="login" className={styles.button}>
+          <button onClick={onLogout} className={styles.button}>
             Logout
-          </Link>
+          </button>
         </div>
       </nav>
     </header>

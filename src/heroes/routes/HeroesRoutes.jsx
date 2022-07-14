@@ -7,7 +7,7 @@ export function HeroesRoutes() {
   return (
     <>
       <Navbar />
-      <div className={styles.container}>
+      <main className={styles.container}>
         <Routes>
           <Route path="marvel" element={<MarvelPage />} />
           <Route path="dc" element={<DcPage />} />
@@ -15,7 +15,7 @@ export function HeroesRoutes() {
           <Route path="hero" element={<HeroPage />} />
           <Route path="/" element={<Navigate to="marvel" />} />
         </Routes>
-      </div>
+      </main>
     </>
   );
 }

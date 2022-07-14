@@ -69,8 +69,13 @@
 .button {
   background-color: #262626;
   border-radius: 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
+  line-height: 1.5;
   padding: 0.5rem 1rem;
 
   transition-property: color, background-color;

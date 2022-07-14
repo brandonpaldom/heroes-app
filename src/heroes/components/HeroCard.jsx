@@ -12,7 +12,7 @@ export function HeroCard({
   const heroImageUrl = `/assets/heroes/${id}.jpg`;
 
   return (
-    <Link to={`/hero/${id}`} className={styles.card}>
+    <Link to={`/hero/${id}`} className={`${styles.card} animate__animated animate__fadeIn`}>
       <img
         src={heroImageUrl}
         alt={superhero}

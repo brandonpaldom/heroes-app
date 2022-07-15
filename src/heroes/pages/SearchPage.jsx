@@ -44,10 +44,16 @@ export function SearchPage() {
       <div className={styles.results}>
         <h2 className={styles.subtitle}>Results</h2>
         {q === '' ? (
-          <p className={styles.paragraph}>Search for a hero</p>
+          <p
+            className={`${styles.paragraph} animate__animated animate__fadeIn`}
+          >
+            Search for a hero
+          </p>
         ) : (
           heroes.length === 0 && (
-            <p className={styles.paragraph}>
+            <p
+              className={`${styles.paragraph} animate__animated animate__fadeIn`}
+            >
               Sorry, not found: <span className={styles.highlight}>{q}</span>
             </p>
           )
